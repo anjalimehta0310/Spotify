@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Music Website</title>
+</head>
+<body>
+    <header>
+        <div class="menu_side">
+            <h1>PlayList</h1>
+            <div class="PlayList">
+                <h4 class="active"><span></span><i class="bi bi-music-note-beamed"></i>PlayList</h4>
+                <h4><span></span><i class="bi bi-music-note-beamed"></i> last listening</h4>
+                <h4><span></span><i class="bi bi-music-note-beamed"></i> Recommended</h4>
+            </div>
+            <div class="menu_song">
+                <li class="songItem">
+                    <span>01</span>
+                    <img src="img/img11.jpg">
+                    <h5>On My Way<br>
+                        <div class="subtitle">Alan Walker, Farruko, and Sabrina Carpenter</div>
+                    </h5>
+                    <h5><i class="bi playListPlay bi-play-circle-fill" id="1"></i></h5>
+                </li>
+                <li class="songItem">
+                    <span>02</span>
+                    <img src="img/img10.jpg">
+                    <h5>yeh dooriyan<br>
+                        <div class="subtitle">Amaal Mallik, Irshad Kamil, and Shreya Ghoshal</div>
+                    </h5>
+                    <h5><i class="bi playListPlay bi-play-circle-fill" id="2"></i></h5>
+                </li>
+                <li class="songItem">
+                    <span>03</span>
+                    <img src="img/img1.jpg">
+                    <h5>Channa Ve<br>
+                        <div class="subtitle">Arijit Singh</div>
+                    </h5>
+                    <h5><i class="bi playListPlay bi-play-circle-fill" id="3"></i></h5>
+                </li>
+                <li class="songItem">
+                    <span>04</span>
+                    <img src="img/img9.jpg">
+                    <h5>Sab Tera<br>
+                        <div class="subtitle">Armaan Malik</div>
+                    </h5>
+                    <h5><i class="bi playListPlay bi-play-circle-fill" id="4"></i></h5>
+                </li>
+                <li class="songItem">
+                    <span>05</span>
+                    <img src="img/img3.jpg">
+                    <h5>Tum hi ho<br>
+                        <div class="subtitle">Arijit Singh</div>
+                    </h5>
+                    <h5><i class="bi playListPlay bi-play-circle-fill" id="5"></i></h5>
+                </li>
+                <li class="songItem">
+                    <span>06</span>
+                    <img src="img/img4.jpg">
+                    <h5>Maan meri Jaan <br>
+                        <div class="subtitle">King</div>
+                    </h5>
+                    <h5><i class="bi playListPlay bi-play-circle-fill" id="6"></i></h5>
+                </li>
+                <li class="songItem">
+                    <span>07</span>
+                    <img src="img/img8.jpg">
+                    <h5>Hamnava mere <br>
+                        <div class="subtitle"> Rocky-Shiv</div> 
+                    </h5>
+                    <h5><i class="bi playListPlay bi-play-circle-fill" id="7"></i></h5>
+                </li>
+                <li class="songItem">
+                    <span>08</span>
+                    <img src="img/img5.jpg">
+                    <h5>Raatan Lambiyan <br>
+                        <div class="subtitle"> Asees Kaur and Jubin Nautiyal</div>     
+                    </h5>
+                    <h5><i class="bi playListPlay bi-play-circle-fill" id="8"></i></h5>
+                </li>
+                <li class="songItem">
+                    <span>09</span>
+                    <img src="img/img14.webp">
+                    <h5>Tumse Pyaar Karke<br>
+                        <div class="subtitle">Jubin Nautiyal, Payal Dev, and Tulsi Kumar</div> 
+                    </h5>
+                    <h5><i class="bi playListPlay bi-play-circle-fill" id="9"></i></h5>
+                </li>
+                <li class="songItem">
+                    <span>10</span>
+                    <img src="img/img12.jpg">
+                    <h5>Humsafar<br>
+                        <div class="subtitle">Akhil Sachdeva</div>    
+                    </h5>
+                    <h5><i class="bi playListPlay bi-play-circle-fill" id="10"></i></h5>
+                </li>
+            </div>
+        </div>  
+        <div class="song_side">
+            <nav>
+                <ul>
+                    <li>DISCOVER <span></span></li>
+                    <li>MY LIBRARY</li>
+                    <li>RADIO</li>
+                </ul>
+                <div class="search">
+                    <i class="bi bi-search"></i>
+                    <input type="text" placeholder="search music">
+                </div>
+                <div class="user">
+                    <img src="img/img17.jpeg" alt="">
+                </div>
+            </nav>
+           <div class="Popular_song">
+                <div class="h4">
+                    <h4>Popular Songs</h4>
+                    <div class="btn_s">
+                        <i class="bi bi-arrow-left-short" id="pop_song_left"></i>
+                        <i class="bi bi-arrow-right-short" id="pop_song_right"></i>  
+                    </div>
+                </div>
+                <div class="pop_song">
+                    <li class="songItem">
+                        <div class="img_play">
+                             <img src="img/img18.jpg"> 
+                             <i class="bi playListPlay bi-play-circle-fill" id="'11"></i>
+                        </div>
+                        <h5>Isq Risk<br>
+                            <div class="subtitle">Rahat Fateh Ali Khan</div>
+                        </h5>
+                    </li>
+                    <li class="songItem">
+                        <div class="img_play">
+                             <img src="img/img19.jpg"> 
+                             <i class="bi playListPlay bi-play-circle-fill" id="'12"></i>
+                        </div>
+                        <h5>Sanam Re<br>
+                            <div class="subtitle">Akhil Sachdeva</div>
+                        </h5>
+                    </li>
+                    <li class="songItem">
+                        <div class="img_play">
+                             <img src="img/img20.webp"> 
+                             <i class="bi bi-play-circle-fill" id="'13"></i>
+                        </div>
+                        <h5>Tere Vaste<br>
+                            <div class="subtitle">Sachin Jigar</div>
+                        </h5>
+                    </li>
+                    <li class="songItem">
+                        <div class="img_play">
+                             <img src="img/img21.jpg"> 
+                             <i class="bi playListPlay bi-play-circle-fill" id="'14"></i>
+                        </div>
+                        <h5>subhanallah<br>
+                            <div class="subtitle">Shilpa Rao & Sreerama Chandra</div>
+                        </h5>
+                    </li>
+                    <li class="songItem">
+                        <div class="img_play">
+                             <img src="img/img22.jpg"> 
+                             <i class="bi playListPlay bi-play-circle-fill" id="'15"></i>
+                        </div>
+                        <h5>Apna bna le<br>
+                            <div class="subtitle">sachin jigar & arijit Singh</div>
+                        </h5>
+                    </li>
+                    <li class="songItem">
+                        <div class="img_play">
+                             <img src="img/img23.jpg"> 
+                             <i class="bi playListPlay bi-play-circle-fill" id="'16"></i>
+                        </div>
+                        <h5>kesariya<br>
+                            <div class="subtitle">Pritam & Amitabh Bhattacharya</div>
+                        </h5>
+                    </li>
+                    <li class="songItem">
+                        <div class="img_play">
+                             <img src="img/img24.jpg"> 
+                             <i class="bi playListPlay bi-play-circle-fill" id="'17"></i>
+                        </div>
+                        <h5>Mahiye Jina Sohna<br>
+                            <div class="subtitle">Darshan Raval</div>
+                        </h5>
+                    </li>
+                    <li class="songItem">
+                        <div class="img_play">
+                             <img src="img/img25.jpg"> 
+                             <i class="bi playListPlay bi-play-circle-fill" id="'18"></i>
+                        </div>
+                        <h5>Ranjha<br>
+                            <div class="subtitle">Jasleen Royal,B Praak</div>
+                        </h5>
+                    </li>
+                    <li class="songItem">
+                        <div class="img_play">
+                             <img src="img/img26.jpg"> 
+                             <i class="bi playListPlay bi-play-circle-fill" id="'19"></i>
+                        </div>
+                        <h5>Tum Mere<br>
+                            <div class="subtitle">Darshan Raval</div>
+                        </h5>
+                    </li>
+                    <li class="songItem">
+                        <div class="img_play">
+                             <img src="img/img27.jpg"> 
+                             <i class="bi playListPlay bi-play-circle-fill" id="'20"></i>
+                        </div>
+                        <h5>Bekhayalii<br>
+                            <div class="subtitle">Sachet Tandon</div>
+                        </h5>
+                    </li>
+                </div>
+                <div class="popular_artists">
+                    <div class="h4">
+                        <h4>Popular Artists</h4>
+                        <div class="btn_s">
+                            <i class="bi bi-arrow-left-short" id="pop_art_left"></i>
+                            <i class="bi bi-arrow-right-short" id="pop_art_right"></i>  
+                        </div>
+                    </div>
+                    <div class="item">
+                        <li class="songItem">
+                            <img src="img/img 28.jpg" alt="1">
+                            <h5>Arijit Singh<br></h5>
+                        </li>
+                        <li class="songItem">
+                            <img src="img/img29.jpg" alt="1">
+                            <h5>Mohit Chauhan</h5>
+                        </li>
+                        <li lass="songItem">
+                            <img src="img/img30.jpg" alt="1">
+                            <h5>Darshan Raval</h5>
+                        </li>
+                        <li lass="songItem">
+                            <img src="img/img31.jpg" alt="1">
+                            <h5>Neha Kakkar</h5>
+                        </li>
+                        <li lass="songItem">
+                            <img src="img/img32.jpg" alt="1">
+                            <h5>Armaan Malik</h5>
+                        </li>
+                        <li lass="songItem">
+                            <img src="img/img33.jpg" alt="1">
+                            <h5>javed Ali</h5>
+                        </li>
+                        <li lass="songItem">
+                            <img src="img/img35.jpg" alt="1">
+                            <h5>sunidhi chauhan</h5>
+                        </li>
+                        <li lass="songItem">
+                            <img src="img/img36.jpg" alt="1">
+                            <h5>Shreyaa Ghosal</h5>
+                        </li>
+                        <li lass="songItem">
+                            <img src="img/img37.jpg" alt="1">
+                            <h5>Alka yagnik</h5>
+                        </li>
+                        <li lass="songItem">
+                            <img src="img/img38.jpg" alt="1">
+                            <h5>Vishal Dadlani </h5>
+                        </li>
+                        <li lass="songItem">
+                            <img src="img/img39.jpg" alt="1">
+                            <h5>Shekhar Ravjiani</h5>
+                        </li>
+                        <li lass="songItem">
+                            <img src="img/img40.jpg" alt="1">
+                            <h5>Sonu Nigam</h5>
+                        </li>
+                        <li lass="songItem">
+                            <img src="img/img41.jpg" alt="1">
+                            <h5>Amaal malik</h5>
+                        </li>
+                    </div>
+                    <div class="popular_album">
+                        <div class="h4">
+                            <h4>Popular Album</h4>
+                            <div class="btn_s">
+                                <i class="bi bi-arrow-left-short" id="pop_album_left"></i>
+                                <i class="bi bi-arrow-right-short" id="pop_album_right"></i>  
+                            </div>
+                        </div>
+                        <div class="pop_album">
+                            <li class="songItem">
+                                <div class="img_play">
+                                     <img src="img/img42.jpg">
+                                     <i class="bi bi-play-circle-fill" id="11"></i>
+                                </div>
+                                <h5>Dilwale Dulhania Le Jayenge<br>
+                                    <div class="subtitle">Romance/Musical</div>
+                                </h5>
+                            </li>
+                            <li class="songItem">
+                                <div class="img_play">
+                                     <img src="img/img43.jpg"> 
+                                     <i class="bi bi-play-circle-fill" id="11"></i>
+                                </div>
+                                <h5>Dilwale<br>
+                                    <div class="subtitle">/Drama/Romance</div>
+                                </h5>
+                            </li>
+                            <li class="songItem">
+                                <div class="img_play">
+                                     <img src="img/img44.jpg"> 
+                                     <i class="bi bi-play-circle-fill" id="11"></i>
+                                </div>
+                                <h5>Veer Jara<br>
+                                    <div class="subtitle">Romance/Musical</div>
+                                </h5>
+                            </li>
+                            <li class="songItem">
+                                <div class="img_play">
+                                     <img src="img/img45.jpg"> 
+                                     <i class="bi bi-play-circle-fill" id="11"></i>
+                                </div>
+                                <h5>omg2<br>
+                                    <div class="subtitle">Drama/Comedy</div>
+                                </h5>
+                            </li>
+                            <li class="songItem">
+                                <div class="img_play">
+                                     <img src="img/img46.jpg"> 
+                                     <i class="bi bi-play-circle-fill" id="11"></i>
+                                </div>
+                                <h5>Luka Chuppi<br>
+                                    <div class="subtitle">Romance/comedy</div>
+                                </h5>
+                            </li>
+                            <li class="songItem">
+                                <div class="img_play">
+                                     <img src="img/img47.jpg"> 
+                                     <i class="bi bi-play-circle-fill" id="11"></i>
+                                </div>
+                                <h5>Badhaai ho<br>
+                                    <div class="subtitle">Romance/comedy</div>
+                                </h5>
+                            </li>
+                            <li class="songItem">
+                                <div class="img_play">
+                                     <img src="img/img48.jpg"> 
+                                     <i class="bi bi-play-circle-fill" id="11"></i>
+                                </div>
+                                <h5>Jab We Met<br>
+                                    <div class="subtitle">Romance/Musical</div>
+                                </h5>
+                            </li>
+                            <li class="songItem">
+                                <div class="img_play">
+                                     <img src="img/img49.jpg"> 
+                                     <i class="bi bi-play-circle-fill" id="11"></i>
+                                </div>
+                                <h5> Shershaah <br>
+                                    <div class="subtitle">Action</div>
+                                </h5>
+                            </li>
+                            <li class="songItem">
+                                <div class="img_play">
+                                     <img src="img/img50.jpg"> 
+                                     <i class="bi bi-play-circle-fill" id="11"></i>
+                                </div>
+                                <h5>student of the year<br>
+                                    <div class="subtitle">Romance/Drama</div>
+                                </h5>
+                            </li>
+                            <li class="songItem">
+                                <div class="img_play">
+                                     <img src="img/img51.jpg"> 
+                                     <i class="bi bi-play-circle-fill" id="11"></i>
+                                </div>
+                                <h5>3 idiots<br>
+                                    <div class="subtitle">Romance/comedy</div>
+                                </h5>
+                            </li>
+                        </div>
+                    </div>
+                </div>
+           </div>
+        </div> 
+        <div class="master_play">
+            <div class="wave" id="wave">
+                <div class="wave1"></div>
+                <div class="wave2"></div>
+                <div class="wave3"></div>
+            </div>
+            <img src="img/img 16.jpg" alt="" id=" ">
+            <h5 id="title"> vande mataram
+                <div class="subtitle">Bankim CHandra Chatterjee</div>
+            </h5>
+            <div class="icon">
+                <i class="bi shuffle bi-music-note-beamed"></i>
+                <i class="bi bi-skip-start-fill"></i>
+                <i class="bi bi-play-fill" id="masterPlay"></i>
+                <i class="bi bi-skip-end-fill"></i>
+                <i class="bi bi-cloud-arrow-down-fill" id="download_music"></i>
+            </div>
+            <span id="currentStart">0:00</span>
+             <div class="bar">
+                <input type="range" id="seek" min="0" max="100">
+                <div class="bar2" id="bar2"></div>
+                <div class="dot"></div>
+             </div>
+             <span id="currentend">0:30</span>
+             <div class="vol">
+                <i class="bi bi-volume-down-fill " id="vol_icon"></i>
+                <input type="range" min="0" max="100" id="vol">
+                <div class="vol_bar"></div>
+                <div class="dot" id="vol_dot"></div>
+             </div>
+        </div>
+    </header>
+    <script src="app.js"></script> 
+</body>
+</html>
